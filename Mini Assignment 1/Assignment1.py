@@ -29,6 +29,35 @@ class PairsPossible(StringClass):
         print()
 
 
+class SearchCommonElements:
+    StringClassString = ""
+    PairPossibleString = ""
+
+    arr = []
+
+    def __init__(self, a, b):
+        self.StringClassString = a
+        self.PairPossibleString = b
+
+    def common(self):
+        dict = {}
+        for char in self.StringClassString:
+            if char in dict:
+                continue
+            else:
+                dict[char] = 1;
+        for char in self.PairPossibleString:
+            if char in dict:
+                self.arr.append(char)
+
+        for key, val in dict.items():
+            print(key + " ")
+
+    def printList(self):
+        print(self.arr)
+
+
+
 str = input("Please input string : ")
 obj = StringClass(str)
 print(obj.length_of_string())
@@ -37,3 +66,7 @@ obj.list_of_character()
 obj1 = PairsPossible()
 obj1.storingPairs()
 obj1.printList()
+
+third = SearchCommonElements(obj.str, obj1.string)
+third.common()
+third.printList()
