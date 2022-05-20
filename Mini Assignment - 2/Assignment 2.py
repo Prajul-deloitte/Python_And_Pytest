@@ -75,3 +75,13 @@ sampleDict["location"] = sampleDict["city"]
 del sampleDict["city"]
 print(sampleDict)
 print()
+
+# Problem 7
+print("Problem 7 solution")
+
+originalDict = {'HuEx': [1, 3, 4], 'is': [7, 6], 'best': [4, 5]}
+print("The original dictionary is : " + str(originalDict))
+res = []
+for key, val in originalDict.items():
+    res.append([key] + val)
+print("The converted list is : " + str(res))
