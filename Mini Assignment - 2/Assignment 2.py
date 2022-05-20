@@ -38,3 +38,16 @@ sub_list = ["h", "i", "j"]
 list1[2][1][2].extend(sub_list)
 print(list1)
 print()
+
+# Problem 4
+print("Problem 4 Solution")
+
+keys = ["Ten", "Twenty", "Thirty"]
+values = [10, 20, 30]
+dict = {}
+
+for i in range(len(keys)):
+    dict[keys[i]] = values[i]
+
+print(dict)
+print()
