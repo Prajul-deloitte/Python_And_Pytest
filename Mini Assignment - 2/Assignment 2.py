@@ -61,3 +61,17 @@ dict2 = {'Thirty': 30, 'Fourty': 40, 'Fifty': 50}
 dict1.update(dict2)
 print(dict1)
 print()
+
+# Problem 6
+print("Problem 6 solution")
+sampleDict = {
+ "name": "Kelly",
+ "age":25,
+ "salary": 8000,
+ "city": "New york"
+}
+
+sampleDict["location"] = sampleDict["city"]
+del sampleDict["city"]
+print(sampleDict)
+print()
