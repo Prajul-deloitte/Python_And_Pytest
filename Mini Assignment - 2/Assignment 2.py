@@ -15,3 +15,17 @@ for i in list:
             print(f"{k} ' -> ' {count[k]}")
         k=k+1
 print()
+
+# Problem 2
+
+print("Problem 2 solution : ")
+list1 = ["hello", "take"]
+list2 = ["Dear", "sir"]
+list3 = []
+
+for i in list1:
+    for j in list2:
+        list3.append(i+j)
+
+print(list3)
+print()
